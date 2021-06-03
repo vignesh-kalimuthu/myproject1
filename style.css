@@ -1,0 +1,155 @@
+*
+{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+}
+body
+{
+     background-image:url('bg.jpg');
+     background-size: cover ;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position: center;
+     box-sizing: border-box;
+}
+h2
+{
+   color:rgba(0, 119, 255, 0.479);
+   font-family:copperplate;
+   font-size:300%;
+   text-align:center;
+}
+pre{
+   color:saddlebrown;
+   font-family:courier;
+   font-size:170%;
+   text-align:center;
+}
+
+
+.menu-bar
+{
+  background-color: grey;
+  text-align: center;
+  margin:auto;
+  
+  
+
+  
+}
+.logo 
+{
+   color:white;
+   font-size: 20px;
+   text-align:left;
+   padding-top:30px;
+   transform:translateY(50%) ;
+   
+}
+.logo span
+{
+   color:black;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style:none;
+  color:white;
+  
+}
+.menu-bar ul li
+{
+   width: 120px;
+   margin: 10px;
+   padding-bottom: 10px;
+  
+}
+.menu-bar ul li a
+{
+   text-decoration: none;
+   color:white;
+}
+.active, .menu-bar ul li:hover
+{
+   background:transparent;
+   border-radius:1px;
+}
+.menu-bar ul li a:hover
+{
+   color:black;
+}
+.menu-bar .fa
+{
+   margin-right: 8px;
+}
+.sub-menu-1
+{
+   display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 
+{
+   display: block;
+   position: absolute;
+   background:grey;
+   margin-top: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+   display: block;
+   margin: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+   width: 100px;
+   padding: 5px;
+   background: transparent;
+   border-radius: 0;
+   text-align: center;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li  a:hover
+{
+   color:black;
+}
+@media screen and (max-width:600px)
+ {
+   h2
+   {
+      color:black;
+      font-family:copperplate;
+      font-size:30px;
+      text-align:center;
+   }
+   pre{
+      color:black;
+      font-family:courier;
+      font-size:15px;
+      text-align:center;
+   }
+   .menu-bar
+   {
+      background-color: grey;
+      text-align: center;
+      height: 100px;
+      width: 100%;
+   }
+   .menu-bar ul li
+   {
+      width: 50px;
+      margin: 10px;
+     
+   }
+   .menu-bar .fa
+   {
+      margin-right: 0px;
+   }
+   .logo 
+   {
+      color:white;
+      font-size: 15px;
+      text-align:left;
+      padding-top:20px;
+   }
+
+
+}
